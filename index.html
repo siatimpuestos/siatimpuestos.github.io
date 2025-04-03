@@ -18,30 +18,31 @@
             padding: 20px;
         }
         .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
             padding: 20px;
+            justify-content: center;
         }
         .plato {
             background-color: white;
-            margin: 10px;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 250px;
+            text-align: center;
         }
         .plato img {
             width: 100%;
+            height: 150px;
+            object-fit: cover;
             border-radius: 10px;
         }
         footer {
             background-color: #8b0000;
             color: white;
             padding: 10px;
-            position: fixed;
+            position: relative;
             width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
@@ -84,7 +85,7 @@
         <div class="plato">
             <img src="kalapurca.jpg" alt="Kalapurka">
             <h2>Kalapurka (Potosí)</h2>
-            <p>Sopa caliente con piedra volcánica, carne y maíz.</p>
+            <p>Sopa espesa con carne, maíz y piedra volcánica caliente.</p>
         </div>
         <div class="plato">
             <img src="fricase.jpg" alt="Fricase">
